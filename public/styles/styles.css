@@ -1,0 +1,241 @@
+body{
+    background-color: #001d3d;
+    color: #b9c2cc;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+}
+
+a {
+    color: #b9c2cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffd60a;
+}
+
+em {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.part-title{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.intro-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #05182e;
+}
+.intro-btn{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #ffd60a;
+    color: #05182e;
+    padding: 1rem 2.5rem;
+    align-self: center;
+    margin: 4rem;
+    border-radius: 1rem;
+}
+.intro-btn:hover{
+    background-color: #ffd60a99;
+    border: solid 2px #ffd60a;
+}
+.intro-text h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: #e3e6eb;
+}
+.skills-container {
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+.skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-img-box {
+    background-color: #02122459;
+    flex: 0 1 75%;
+    width: 75%;
+    border-radius: 100vmax;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.skill-img-box::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.eat {
+    background-image: url(/images/eat.jpg);
+}
+.sleep {
+    background-image: url(/images/sleep.jpg);
+}
+.cook {
+    background-image: url(/images/cook.jpg);
+}
+.skill-textspace {
+    width: 100%;
+    margin-top: 1rem;
+}
+.skill-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+.skill-description {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #6b7988;
+}
+.experience-container {
+    width: 60%;
+}
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.experience {
+    background-color: #02122459;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 1rem;
+}
+.experience-img-box {
+    background-color: #02122459;
+    flex: 1 0 20%;
+    width: 100%;
+    margin: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.work1{
+    background-image: url(/images/work1.jpg);
+}
+.work2{
+    background-image: url(/images/work2.jpg);
+}
+.experience-img-box:before{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.experience-textspace {
+    width: 300%;
+    margin: 2rem 2rem 2rem 0rem;
+}
+.experience-description ul {
+    list-style-type: square;
+    list-style-position: outside;
+    padding: 0;
+}
+.experience-description li {
+    padding-left: 1rem;
+    padding-bottom: .25rem;
+}
+.experience-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.experience-description {
+    padding: 0.5rem 1rem 0rem 1rem;
+    font-size: 1rem;
+}
+.contact-container {
+    width: 60%;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.contact {
+    background-color: #02122459;
+    flex: 1 0 auto;
+    max-width: 4rem;
+    border-radius: 20%;
+    position: relative;
+}
+.contact:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.github {
+    background:url('/images/github-icon.png') no-repeat center;
+    background-size: contain;
+}
+.linkedin {
+    background:url('/images/linkedin-icon.png') no-repeat center;
+    background-size: contain;
+}
+.facebook {
+    background:url('/images/facebook-icon.png') no-repeat center;
+    background-size: contain;
+}
+.instagram {
+    background:url('/images/instagram-icon.png') no-repeat center;
+    background-size: contain;
+}
+.email {
+    background:url('/images/email-icon.png') no-repeat center;
+    background-size: contain;
+}
+.outro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #ffffff66;
+}
+.contact a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+html { scroll-behavior: smooth;}
